@@ -1,12 +1,21 @@
-streamlit>=1.31
+# Web
+streamlit>=1.30
 
-langchain==0.2.1
-langchain-core==0.2.43
-langchain-text-splitters==0.2.1
+# LangChain core split
+langchain>=0.2
+langchain-core>=0.2
+langchain-community>=0.2
+langchain-chroma>=1.0
 
-openai>=1.0.0
+# Vector DB
 chromadb>=0.4.24
-tiktoken
-langchain-chroma
-langchain-community
 
+# LLM / Embedding
+dashscope>=1.25.0
+tiktoken
+
+# Utils
+python-dotenv
+pydantic>=2
+requests
+rich
