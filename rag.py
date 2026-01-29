@@ -23,7 +23,8 @@ def print_prompt(prompt):
 class RagService(object):
     def __init__(self):
         self.vector_service=VectorStoreService(
-            embedding=SafeDashScopeEmbeddings(model=config.embedding_model_name)
+            embedding=SafeDashScopeEmbeddings(model=config.embedding_model_name,
+                     dashscope_api_key="sk-8380c9d3d07247aa86098db7f5989a0d"                        )
         )
         self.prompt_template=ChatPromptTemplate.from_messages(
             [
